@@ -1,4 +1,4 @@
-# React Fundamentals Workshop by Ben Ilegbodu
+# React Fundamentals Workshop
 
 A step-by-step workshop for learning React fundamentals.
 
