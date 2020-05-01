@@ -7,7 +7,9 @@
     "lint": "npm run eslint",
     "start:api": "node api-server.js",
     "start:server": "webpack-dev-server --content-base src/ --hot --inline --open",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "^1.15.1",
@@ -16,7 +18,8 @@
     "lodash": "^4.12.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
@@ -40,5 +43,6 @@
       "react",
       "stage-0"
     ]
-  }
+  },
+  "snyk": true
 }
